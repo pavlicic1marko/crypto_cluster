@@ -1,16 +1,10 @@
-# This is a sample Python script.
+from download_crypto_historic_data import *
+crypto_currency_to_download = ['BTC-USD', 'ETH-USD']
+start_date = '2024-03-27'
+end_date = '2024-06-27'
+interval = 'daily'
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+construct_download_urls(crypto_currency_to_download, start_date, end_date, interval)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
