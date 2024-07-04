@@ -5,7 +5,7 @@ import pandas as pd
 
 
 
-def construct_download_urls(
+def get_historical_data(
         ticker_list,
         period1,
         period2,

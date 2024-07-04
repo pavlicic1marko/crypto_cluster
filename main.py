@@ -4,7 +4,7 @@ start_date = '2024-03-27'
 end_date = '2024-04-27'
 interval = 'daily'
 
-construct_download_urls(crypto_currency_to_download, start_date, end_date, interval)
+get_historical_data(crypto_currency_to_download, start_date, end_date, interval)
 
 
 
