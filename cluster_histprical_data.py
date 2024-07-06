@@ -8,16 +8,16 @@ from tslearn.clustering import TimeSeriesKMeans
 from sklearn.preprocessing import MinMaxScaler
 
 
-directory = '.'
+directory = 'crypto/'
 mySeries = []
-clusters = 3
+clusters = 4
 
 
 # create Change column by subtracting open from close
 namesofMySeries = []
 for filename in os.listdir(directory):
     if filename.endswith(".csv"):
-        df = pd.read_csv(filename)
+        df = pd.read_csv(directory + filename)
         open_values = np.array(df['Open'].T)
         close_values = np.array(df['Close'].T)
         change_values = open_values-close_values
