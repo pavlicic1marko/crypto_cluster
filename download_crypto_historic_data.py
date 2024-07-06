@@ -39,7 +39,7 @@ def get_historical_data(
         return
 
 def save_data_to_file(data, ticker_name:str):
-    data.to_csv(ticker_name + '_Historical_Data.csv')
+    data.to_csv('crypto/'+ ticker_name + '_Historical_Data.csv')
 
 
 def download_data(urls_dict):
