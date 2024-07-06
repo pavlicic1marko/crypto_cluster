@@ -5,17 +5,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from tslearn.clustering import TimeSeriesKMeans
-
+from sklearn.preprocessing import MinMaxScaler
 
 
 directory = '.'
 mySeries = []
 clusters = 3
-
-from sklearn.preprocessing import Normalizer, MinMaxScaler
-from sklearn.pipeline import make_pipeline
-from sklearn.cluster import KMeans
-
 
 
 # create Change column by subtracting open from close
